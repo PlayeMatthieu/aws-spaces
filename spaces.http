@@ -1,0 +1,5 @@
+
+
+GET https://t7zajlbag4.execute-api.eu-central-1.amazonaws.com/prod/spaces
+Content-Type: : application/json
+###
