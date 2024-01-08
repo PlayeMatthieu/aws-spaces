@@ -1,5 +1,28 @@
 
 
-GET https://t7zajlbag4.execute-api.eu-central-1.amazonaws.com/prod/spaces
+GET https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces
+###
+
+GET https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces?id=23609d75-76f5-4500-981a-9912e9200404
+###
+
+
+POST https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces
 Content-Type: : application/json
+
+{
+    "location": "Veurne2",
+    "name": "Tweede locatie"
+}
+###
+
+PUT https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces?id=c338bf08-0878-473b-adba-6d564bf624f3
+Content-Type: : application/json
+
+{
+    "location": "Brugge"
+}
+###
+
+DELETE https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces?id=23609d75-76f5-4500-981a-9912e9200404
 ###
