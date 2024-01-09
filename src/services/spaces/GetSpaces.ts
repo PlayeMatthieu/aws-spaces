@@ -45,6 +45,7 @@ export async function GetSpaces(event: APIGatewayProxyEvent, ddbClient: DynamoDB
     }));
 
 
+    // For arrays
     const unmarshalledItem = result.Items?.map(item => unmarshall(item));
     console.log(result.Items);
 

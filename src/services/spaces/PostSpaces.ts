@@ -13,17 +13,7 @@ export async function postSpaces(event: APIGatewayProxyEvent, ddbClient: DynamoD
 
     const result = await ddbClient.send(new PutItemCommand({
         TableName: process.env.TABLE_NAME,
-        Item: {
-            id: {
-                S: item.id
-            },
-            location: {
-                S: item.location
-            },
-            name: {
-                S: item.name
-            }
-        }
+        Item: marshall(item)
     }));
     console.log(result);
 
