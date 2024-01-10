@@ -1,13 +1,15 @@
 
+@url = https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces
+@id = 15e5cbc0-cab3-46e0-ac29-a945dfea95e3
 
-GET https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces
+GET {{ url }}
 ###
 
-GET https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces?id=617800e3-112b-4a4e-b66b-628e692bc1d1
+GET {{ url }}?id={{ id }}
 ###
 
 
-POST https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces
+POST {{ url }}
 Content-Type: : application/json
 
 {
@@ -16,7 +18,7 @@ Content-Type: : application/json
 }
 ###
 
-PUT https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces?id=122d7279-48c2-45d5-888b-b3dd1f5e0863
+PUT {{ url }}?id={{ id }}
 Content-Type: : application/json
 
 {
@@ -24,5 +26,5 @@ Content-Type: : application/json
 }
 ###
 
-DELETE https://4aiigi2iul.execute-api.eu-central-1.amazonaws.com/prod/spaces?id=617800e3-112b-4a4e-b66b-628e692bc1d1
+DELETE {{ url }}?id={{ id }}
 ###
